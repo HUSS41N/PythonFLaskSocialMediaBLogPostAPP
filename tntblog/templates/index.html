@@ -2,15 +2,16 @@
 
 
 {% block content %}
-    <div class="jumbotron">
-        <h1>TNT Blogs</h1>
-        <p>Welcome to tnt blogs</p>
+    <div class="jumbotron" style="border-radius: 0%;background: rgb(99,99,101);
+    background: linear-gradient(90deg, rgba(99,99,101,1) 0%, rgba(30,232,233,1) 0%, rgba(18,77,249,1) 0%, rgba(2,0,36,1) 0%, rgba(9,16,125,1) 0%, rgba(33,33,187,1) 0%, rgba(132,142,244,1) 100%);color: white;">
+        <h1>TNT Fitness & Sports</h1>
+        <p>Everything you want is outside of your comfort zone.</p>
     </div>
     <div class="container">
         
         {% for post in blog_posts.items %}
-            <div class="card">
-                <div class="card-body">
+            <div class="card" style="border-radius: 0%;">
+                <div class="card-body" >
                   
                     <h2><a class="card-title" href="  {{ url_for('blog_posts.blog_post', blog_post_id=post.id) }}">{{ post.title }}</a></h2>
                     <a href="{{ url_for('users.user_posts', username=post.author.username) }}">Written By: {{ post.author.username }}</a>
@@ -18,6 +19,7 @@
                     <a href="{{ url_for('blog_posts.blog_post', blog_post_id=post.id) }}" class="btn btn-primary">Read Blog Post</a>
                 </div>
             </div>
+            <br>
         {% endfor %}
             
     </div>

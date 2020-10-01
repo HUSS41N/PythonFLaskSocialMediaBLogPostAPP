@@ -2,19 +2,20 @@
 
 
 {% block content %}
-    <div class="jumbotron">
+    <div class="jumbotron" style="border-radius: 0%;background: rgb(99,99,101);
+    background: linear-gradient(90deg, rgba(99,99,101,1) 0%, rgba(30,232,233,1) 0%, rgba(18,77,249,1) 0%, rgba(2,0,36,1) 0%, rgba(9,16,125,1) 0%, rgba(33,33,187,1) 0%, rgba(132,142,244,1) 100%);color: white;">
         <div align='center'>
-            <h1>Welcome to the page for {{current_user.username}}</h1>
-            <img align='center' src="{{url_for('static',filename='profile_pics/'+current_user.profile_image)}}">
+            <h1>Welcome  {{current_user.username}}</h1>
+            <img align='center' src="{{url_for('static',filename='profile_pics/'+current_user.profile_image)}}" style="border-radius: 30%;">
         </div>
-    </div>
     
     <div class="container">
+        <p  class="text-center">You Can Update your Email,username or Change your profile Picture </p>
         <form method="post" action="" enctype="multipart/form-data">
             {{form.hidden_tag()}}
             <div class="form-group">
                 {{form.email.label(class="form-group")}}
-                {{form.email(class="form-control")}}
+                {{form.email(class="form-control mb-4")}}
             </div>
             
             <div class="form-group">
@@ -23,15 +24,16 @@
             </div>
             
             <div class="form-group">
-                {{form.picture.label(class="form-group")}}
-                {{form.picture(class="form-control")}}
+                {{form.picture.label()}}
+                {{form.picture()}}
             </div>
             
             <div class="form-group">
-                {{form.submit(class="btn btn-primary")}}
+                {{form.submit(class="btn btn-danger")}}
             </div>
             
         </form>
+        </div>
     </div>
 {% endblock  %}
     

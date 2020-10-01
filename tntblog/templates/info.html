@@ -2,9 +2,144 @@
 
 
 {% block content %}
-    <div class="jumbotron">
-        <h1>Info about our company</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur autem veritatis at. Quod accusantium nulla, ipsam laboriosam modi hic vitae at eaque cum molestias autem illum voluptatibus soluta maiores ullam!</p>
-    </div>  
+
+<div class="container my-5 py-5 z-depth-1">
+
+
+    <!--Section: Content-->
+    <section class="dark-grey-text text-center">
+      
+      <h2 class="font-weight-bold pt-4 mb-4">TNT Fitness & Sports</h2>
+      
+      <h3 class="font-weight-bold  mb-5">Everything you want is outside of your comfort zone.</h3>
+  
+      <div class="row mx-lg-5 mx-md-3">
+        <div class="col-md-6 mb-4">
+          
+          <div class="view mb-5">
+            <img src="https://mdbootstrap.com/img/illustrations/undraw_grand_slam_0q5r.svg" class="img-fluid" alt="smaple image">
+          </div>
+  
+          <h5 class="font-weight-normal text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h5>
+  
+           </div>
+           <div class="col-md-6 mb-4">
+          
+          <div class="view mb-5">
+            <img src="https://mdbootstrap.com/img/illustrations/undraw_basketball_agx4.png" class="img-fluid" alt="smaple image">
+          </div>
+  
+          <h5 class="font-weight-normal text-muted">Ut enim ad minim veniam, quis nostrud ut aliquip ex ea commodo consequat.</h5>
+  
+        </div>
+      </div>
+  
+    </section>
+    <!--Section: Content-->
+    <div class="container my-5 py-5 z-depth-1">
+
+        <!--Section: Content-->
+        <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+            
+          <!--Grid row-->
+          <div class="row">
+    
+            <!--Grid column-->
+            <div class="col-md-6 mb-4 mb-md-0">
+    
+              <h3 class="font-weight-bold">Commit to be fit.</h3>
+    
+              <p class="text-muted">Health could be a level of our practical and physical effects of the whole living organism. each human living on this planet has a capability to adapt to any weather. These living creatures have the flexibility to adapt and manage in any scenario whether or not it’s a physical, mental, psychological or a social modification within the setting.</p>
+    
+              <a class="btn btn-primary btn-md " href="{{url_for('users.register')}}" role="button">JOIN NOW<i class="fa fa-gem ml-2"></i></a>
+    
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-md-6 mb-4 mb-md-0">
+    
+              <!--Image-->
+              <div class="view overlay z-depth-1-half">
+                <img src="https://images.unsplash.com/photo-1507398941214-572c25f4b1dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="img-fluid"
+                  alt="" height="40px">
+                <a href="#">
+                  <div class="mask rgba-white-light"></div>
+                </a>
+              </div>
+    
+            </div>
+               
+          </div>
+    </section>
+      
+    
+    
+      </div>
+  
+  </div>
+  <!-- Footer -->
+<footer class="page-footer font-small blue pt-4" style="background-color: #6610f2;color: white;">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+  
+          <!-- Content -->
+          <h5 class="text-uppercase">Footer Content</h5>
+          <p>Here you can use rows and columns to organize your footer content.</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+          <!-- Links -->
+          <h5 class="text-uppercase">Links</h5>
+   
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3" style="background-color: blue;">© 2020 Copyright:
+      <a href="{{url_for('core.index')}}">TNT</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
 {% endblock  %}
     
